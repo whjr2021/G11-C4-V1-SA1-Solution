@@ -52,7 +52,7 @@ while carryOn:
     if paddle.collidepoint(ball.x, ball.y):
         bally = -bally
     # Create and draw 6 red bricks on screen 
-    for i in range(6):
+    for i in range(0,6):
         brick = pygame.Rect(10 + i* 100,60,80,30)
         pygame.draw.rect(screen,RED,brick)
     # Create and draw 6 orange bricks on screen 
