@@ -59,10 +59,10 @@ while carryOn:
     for i in range(0,6):
         brick = pygame.Rect(10 + i* 100,100,80,30)
         pygame.draw.rect(screen,ORANGE,brick)
-        # Check if brick and ball coliided using "collidepoint()" function. 
+        # Check if brick and ball collided using "collidepoint()" function. 
         # If so change the color of brick to DARKBLUE
-        if brick.collidepoint(ball.x,ball.y):
-            pygame.draw.rect(screen,DARKBLUE,brick) 
+        #if brick.collidepoint(ball.x,ball.y):
+            #pygame.draw.rect(screen,DARKBLUE,brick) 
     pygame.time.wait(8)
     # Update the contents of entire display
     pygame.display.flip()
